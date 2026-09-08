@@ -1,0 +1,84 @@
+/* ==========================================================================
+   WDD 231 - larger.css
+   Enhancements for tablet / desktop. Contains the required media query.
+   ========================================================================== */
+
+@media (min-width: 640px) {
+  main > section {
+    padding: 1.5rem;
+  }
+
+  .course-cards {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 1rem;
+  }
+
+  .footer-inner {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+  }
+  .footer-inner .social { justify-content: flex-start; }
+  #lastModified { text-align: right; }
+}
+
+@media (min-width: 780px) {
+  /* Hide the hamburger, show a horizontal Flex nav */
+  .menu-toggle { display: none; }
+
+  .primary-nav {
+    grid-column: auto;
+    max-height: none;
+    overflow: visible;
+  }
+  .primary-nav ul {
+    flex-direction: row;
+    gap: 0.25rem;
+  }
+  .primary-nav a {
+    border-top: none;
+    border-radius: 6px 6px 0 0;
+    padding: 0.6rem 1rem;
+    /* reserved so hover/active never change the box size (no twitch) */
+    border-bottom: 3px solid transparent;
+  }
+  .primary-nav a:hover,
+  .primary-nav a:focus-visible {
+    background-color: var(--primary-light);
+  }
+  /* wayfinding on the horizontal bar */
+  .primary-nav a.active {
+    box-shadow: none;
+    border-bottom-color: var(--accent);
+  }
+
+  /* Two-column content zone so the layout is not a single-column flow.
+     Explicit placement keeps the rows aligned regardless of source order. */
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.25rem 1.5rem;
+    align-items: start;
+  }
+  main > h1 {
+    grid-column: 1 / -1;
+    grid-row: 1;
+    font-size: 2rem;
+    margin-bottom: 0;
+  }
+  .welcome     { grid-column: 1; grid-row: 2; }
+  .about       { grid-column: 2; grid-row: 2; }
+  .course-work { grid-column: 1 / -1; grid-row: 3; }
+  main > section { margin-bottom: 0; }
+}
+
+@media (min-width: 1024px) {
+  .course-cards {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; }
+}
