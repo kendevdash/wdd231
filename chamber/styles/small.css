@@ -196,10 +196,6 @@ h1 {
   display: block;
 }
 
-#members.list .member-card {
-  margin-bottom: var(--space-2);
-}
-
 .loading {
   text-align: center;
   color: var(--ink-soft);
@@ -218,6 +214,7 @@ h1 {
 #members.list .member-card {
   flex-direction: row;
   align-items: center;
+  margin-bottom: var(--space-2);
 }
 
 .member-card img {
