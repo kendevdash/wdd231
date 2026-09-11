@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 160" role="img" aria-label="Open book icon representing an education and tutoring business">
+  <rect width="240" height="160" fill="#eef1f6"/>
+  <path d="M120 62c-14-10-34-14-50-10v58c16-4 36 0 50 10 14-10 34-14 50-10V52c-16-4-36 0-50 10z" fill="#ffffff" stroke="#14355e" stroke-width="5"/>
+  <path d="M120 62v58" stroke="#14355e" stroke-width="4"/>
+  <path d="M84 66h20M84 78h20M84 90h16" stroke="#c9891f" stroke-width="4" stroke-linecap="round"/>
+  <path d="M136 66h20M136 78h20M140 90h16" stroke="#c9891f" stroke-width="4" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Provo Valley Chamber of Commerce | Directory</title>
+  <meta name="description" content="Business directory for the Provo Valley Chamber of Commerce: browse member businesses, contact details, and membership level in grid or list view.">
+  <meta name="author" content="Ken Dash">
+
+  <meta property="og:title" content="Provo Valley Chamber of Commerce">
+  <meta property="og:description" content="Discover member businesses and services in Provo, Utah.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://kendevdash.github.io/wdd231/chamber/images/og-image.svg">
+  <meta property="og:image:type" content="image/svg+xml">
+  <meta property="og:url" content="https://kendevdash.github.io/wdd231/chamber/directory.html">
+
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700;900&family=Inter:wght@400;600;700&display=swap">
+
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+
+  <script src="scripts/directory.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="header-bar">
+      <div class="brand">
+        <img src="images/favicon.svg" alt="Provo Valley Chamber of Commerce logo" width="44" height="44">
+        <span class="brand-name">Provo Valley Chamber</span>
+      </div>
+      <button id="menu-button" aria-label="Open menu" aria-expanded="false" aria-controls="primary-nav">&#9776;</button>
+    </div>
+    <nav id="primary-nav">
+      <a href="index.html">Home</a>
+      <a href="discover.html">Discover</a>
+      <a href="directory.html" class="active" aria-current="page">Directory</a>
+      <a href="join.html">Join</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Business Directory</h1>
+    <p class="lead">Member businesses of the Provo Valley Chamber of Commerce, serving Provo and Utah Valley.</p>
+
+    <div class="view-buttons" role="group" aria-label="Change directory view">
+      <button id="grid" aria-pressed="true" aria-label="Grid view">
+        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><rect x="3" y="3" width="8" height="8"/><rect x="13" y="3" width="8" height="8"/><rect x="3" y="13" width="8" height="8"/><rect x="13" y="13" width="8" height="8"/></svg>
+        Grid
+      </button>
+      <button id="list" aria-pressed="false" aria-label="List view">
+        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><rect x="3" y="4" width="18" height="3"/><rect x="3" y="10.5" width="18" height="3"/><rect x="3" y="17" width="18" height="3"/></svg>
+        List
+      </button>
+    </div>
+
+    <section id="members" class="grid" aria-live="polite">
+      <p class="loading">Loading member directory&hellip;</p>
+    </section>
+  </main>
+
+  <footer>
+    <p class="chamber-name">Provo Valley Chamber of Commerce</p>
+    <p>123 Center Street, Provo, UT 84601</p>
+    <p>info@provovalleychamber.example &bull; (801) 555-0100</p>
+    <p>&copy; <span id="currentyear"></span> Ken Dash &bull; WDD 231</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>

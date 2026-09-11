@@ -1,0 +1,11 @@
+/* Small modern reset (stands in for a normalize file) */
+*, *::before, *::after { box-sizing: border-box; }
+* { margin: 0; }
+html { -webkit-text-size-adjust: 100%; }
+body { line-height: 1.6; -webkit-font-smoothing: antialiased; }
+img, picture, svg { display: block; max-width: 100%; }
+input, button, textarea, select { font: inherit; color: inherit; }
+button { cursor: pointer; background: none; border: none; }
+ul { list-style: none; padding: 0; }
+a { color: inherit; text-decoration: none; }
+h1, h2, h3 { line-height: 1.25; }

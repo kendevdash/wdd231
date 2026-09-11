@@ -1,0 +1,66 @@
+/* ==========================================================================
+   Provo Valley Chamber of Commerce – larger.css
+   Larger-view overrides only. Everything lives inside media queries so
+   mobile-first small.css stays in control on small screens.
+   ========================================================================== */
+
+@media only screen and (min-width: 38rem) {
+
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--space-2) var(--space-3);
+  }
+
+  .header-bar {
+    padding: 0;
+  }
+
+  #menu-button {
+    display: none;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: row;
+    gap: var(--space-1);
+  }
+
+  nav a {
+    border-top: none;
+    border-left: none;
+    border-radius: 6px;
+    border-bottom: 3px solid transparent;
+  }
+
+  nav a:hover,
+  nav a:focus-visible {
+    border-left-color: transparent;
+  }
+
+  nav a.active {
+    border-left-color: transparent;
+    border-bottom-color: var(--accent);
+  }
+
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  #members.grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (min-width: 64rem) {
+
+  #members.grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  #members.list .member-card img {
+    width: 9rem;
+    height: 9rem;
+  }
+}

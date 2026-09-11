@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 160" role="img" aria-label="House icon representing a real estate business">
+  <rect width="240" height="160" fill="#eef1f6"/>
+  <path d="M120 40 175 82v48H65V82z" fill="#ffffff" stroke="#14355e" stroke-width="5"/>
+  <path d="M110 130v-30h20v30" fill="#14355e"/>
+  <path d="M132 88h16v14h-16z" fill="#c9891f"/>
+  <path d="M55 88 120 38l65 50" fill="none" stroke="#c9891f" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

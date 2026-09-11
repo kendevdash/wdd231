@@ -1,0 +1,82 @@
+[
+  {
+    "name": "Timpanogos Tech Solutions",
+    "category": "Information Technology",
+    "address": "123 Center Street, Provo, UT 84601",
+    "phone": "(801) 555-0123",
+    "website": "https://example.com",
+    "image": "tech.svg",
+    "membership": 3,
+    "description": "Managed IT support, cloud migration, and cybersecurity for small businesses."
+  },
+  {
+    "name": "Provo River Outfitters",
+    "category": "Outdoor Recreation",
+    "address": "845 North University Avenue, Provo, UT 84604",
+    "phone": "(801) 555-0134",
+    "website": "https://example.com",
+    "image": "outdoors.svg",
+    "membership": 2,
+    "description": "Kayak, fly-fishing, and canyon tour rentals along the Provo River."
+  },
+  {
+    "name": "Maple & Mortar Bakery",
+    "category": "Bakery & Cafe",
+    "address": "210 West 300 North, Provo, UT 84601",
+    "phone": "(801) 555-0145",
+    "website": "https://example.com",
+    "image": "bakery.svg",
+    "membership": 1,
+    "description": "Scratch-made pastries, sourdough, and locally roasted coffee."
+  },
+  {
+    "name": "Wasatch Peak Realty",
+    "category": "Real Estate",
+    "address": "560 South State Street, Orem, UT 84058",
+    "phone": "(801) 555-0156",
+    "website": "https://example.com",
+    "image": "realty.svg",
+    "membership": 3,
+    "description": "Residential and commercial real estate serving Utah Valley."
+  },
+  {
+    "name": "BrightPath Learning Center",
+    "category": "Education & Tutoring",
+    "address": "88 East 1200 South, Provo, UT 84606",
+    "phone": "(801) 555-0167",
+    "website": "https://example.com",
+    "image": "education.svg",
+    "membership": 2,
+    "description": "K-12 tutoring, test prep, and after-school enrichment programs."
+  },
+  {
+    "name": "Canyon Creek Landscaping",
+    "category": "Landscaping",
+    "address": "1450 West 820 North, Provo, UT 84601",
+    "phone": "(801) 555-0178",
+    "website": "https://example.com",
+    "image": "landscaping.svg",
+    "membership": 1,
+    "description": "Design, installation, and seasonal maintenance for home and business grounds."
+  },
+  {
+    "name": "Heritage Square Dental",
+    "category": "Dental Care",
+    "address": "375 North 500 West, Provo, UT 84601",
+    "phone": "(801) 555-0189",
+    "website": "https://example.com",
+    "image": "dental.svg",
+    "membership": 3,
+    "description": "Family and cosmetic dentistry with same-week appointments."
+  },
+  {
+    "name": "Foothill Fitness Studio",
+    "category": "Health & Fitness",
+    "address": "702 East Bulldog Boulevard, Provo, UT 84606",
+    "phone": "(801) 555-0190",
+    "website": "https://example.com",
+    "image": "fitness.svg",
+    "membership": 1,
+    "description": "Small-group strength training and yoga classes for every fitness level."
+  }
+]

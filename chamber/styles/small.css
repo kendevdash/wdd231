@@ -1,0 +1,327 @@
+/* ==========================================================================
+   Provo Valley Chamber of Commerce – small.css
+   Mobile-first base styles. Larger-view overrides live in larger.css.
+   ========================================================================== */
+
+:root {
+  --primary: #14355e;
+  --primary-light: #235587;
+  --accent: #c9891f;      /* decorative only: borders/dividers on dark backgrounds */
+  --accent-text: #8a5a10; /* AA-safe gold for text and the gold badge (5.9:1 on white) */
+  --bg: #f6f4ef;
+  --surface: #ffffff;
+  --ink: #1c1f24;
+  --ink-soft: #4b5563;
+  --line: #e1ddd0;
+
+  --badge-member: #6b7280;
+  --badge-silver: #4f6f92;
+
+  --space-1: 0.5rem;
+  --space-2: 1rem;
+  --space-3: 1.5rem;
+  --space-4: 2rem;
+
+  --radius: 10px;
+  --shadow: 0 3px 12px rgba(20, 53, 94, 0.12);
+  --maxw: 68rem;
+
+  --font-heading: "Merriweather", Georgia, "Times New Roman", serif;
+  --font-body: "Inter", "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: 1.05rem;
+}
+
+h1, h2 {
+  font-family: var(--font-heading);
+}
+
+/* --------------------------------------------------------------------------
+   Header + navigation (mobile: hamburger)
+   -------------------------------------------------------------------------- */
+
+header {
+  background-color: var(--primary);
+  color: #ffffff;
+}
+
+.header-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-2);
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.brand img {
+  border-radius: 8px;
+}
+
+.brand-name {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1.15rem;
+}
+
+#menu-button {
+  width: 2.75rem;
+  height: 2.75rem;
+  font-size: 1.5rem;
+  line-height: 1;
+  color: #ffffff;
+  border: 2px solid rgba(255, 255, 255, 0.55);
+  border-radius: 8px;
+}
+
+#menu-button:hover,
+#menu-button:focus-visible {
+  background-color: rgba(255, 255, 255, 0.14);
+}
+
+/* nav is a Flex container; collapsed on small screens until .open */
+nav {
+  display: none;
+  flex-direction: column;
+}
+
+nav.open {
+  display: flex;
+}
+
+nav a {
+  display: block;
+  padding: 0.85rem var(--space-2);
+  color: #ffffff;
+  font-weight: 600;
+  border-top: 1px solid rgba(255, 255, 255, 0.14);
+  border-left: 4px solid transparent;
+  transition: background-color 160ms ease, border-color 160ms ease;
+}
+
+nav a:hover,
+nav a:focus-visible {
+  background-color: rgba(255, 255, 255, 0.14);
+  border-left-color: var(--accent);
+}
+
+nav a.active {
+  font-weight: 700;
+  border-left-color: var(--accent);
+}
+
+/* --------------------------------------------------------------------------
+   Main – centered, limited width
+   -------------------------------------------------------------------------- */
+
+main {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: var(--space-3) var(--space-2) var(--space-4);
+}
+
+h1 {
+  text-align: center;
+  font-size: 1.7rem;
+  color: var(--primary);
+  margin-bottom: 0.4rem;
+}
+
+.lead {
+  text-align: center;
+  color: var(--ink-soft);
+  margin-bottom: var(--space-3);
+}
+
+/* --------------------------------------------------------------------------
+   Grid / List view toggle
+   -------------------------------------------------------------------------- */
+
+.view-buttons {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-1);
+  margin-bottom: var(--space-3);
+}
+
+.view-buttons button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.6rem 1.1rem;
+  border: 2px solid var(--primary);
+  border-radius: 999px;
+  color: var(--primary);
+  font-weight: 600;
+  background-color: var(--surface);
+  transition: background-color 160ms ease, color 160ms ease;
+}
+
+.view-buttons svg {
+  fill: currentColor;
+}
+
+.view-buttons button:hover,
+.view-buttons button:focus-visible {
+  background-color: var(--primary-light);
+  color: #ffffff;
+}
+
+.view-buttons button[aria-pressed="true"] {
+  background-color: var(--primary);
+  color: #ffffff;
+}
+
+/* --------------------------------------------------------------------------
+   Member directory – CSS Grid, single column on mobile
+   -------------------------------------------------------------------------- */
+
+#members {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-3);
+}
+
+#members.list {
+  display: block;
+}
+
+#members.list .member-card {
+  margin-bottom: var(--space-2);
+}
+
+.loading {
+  text-align: center;
+  color: var(--ink-soft);
+}
+
+.member-card {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+#members.list .member-card {
+  flex-direction: row;
+  align-items: center;
+}
+
+.member-card img {
+  width: 100%;
+  height: 9rem;
+  object-fit: cover;
+}
+
+#members.list .member-card img {
+  width: 7rem;
+  height: 7rem;
+  flex-shrink: 0;
+}
+
+.member-body {
+  padding: var(--space-2) var(--space-2) var(--space-3);
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.member-body h2 {
+  font-size: 1.15rem;
+  color: var(--primary);
+}
+
+.member-category {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--accent-text);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.member-body p {
+  color: var(--ink-soft);
+  font-size: 0.92rem;
+}
+
+.member-link {
+  align-self: flex-start;
+  margin-top: 0.3rem;
+  font-weight: 700;
+  color: var(--primary);
+  text-decoration: underline;
+}
+
+.member-link:hover,
+.member-link:focus-visible {
+  color: var(--accent-text);
+}
+
+.badge {
+  align-self: flex-start;
+  margin-top: 0.4rem;
+  padding: 0.25rem 0.7rem;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.badge-1 { background-color: var(--badge-member); }
+.badge-2 { background-color: var(--badge-silver); }
+.badge-3 { background-color: var(--accent-text); }
+
+/* --------------------------------------------------------------------------
+   Footer
+   -------------------------------------------------------------------------- */
+
+footer {
+  background-color: var(--primary);
+  color: #ffffff;
+  text-align: center;
+  padding: var(--space-4) var(--space-2);
+}
+
+footer p {
+  margin: 0.25rem 0;
+  font-size: 0.9rem;
+}
+
+.chamber-name {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1.05rem;
+}
+
+/* --------------------------------------------------------------------------
+   Accessibility helpers
+   -------------------------------------------------------------------------- */
+
+:focus-visible {
+  outline: 3px solid var(--primary);
+  outline-offset: 2px;
+}
+
+/* On dark surfaces, switch the ring to white for strong contrast */
+header :focus-visible,
+footer :focus-visible {
+  outline-color: #ffffff;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+  }
+}
