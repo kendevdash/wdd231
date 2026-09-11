@@ -80,5 +80,11 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
-  * { transition: none !important; }
+  .menu-toggle .hamburger,
+  .menu-toggle .hamburger::before,
+  .menu-toggle .hamburger::after,
+  .primary-nav,
+  .filter-btn {
+    transition: none;
+  }
 }

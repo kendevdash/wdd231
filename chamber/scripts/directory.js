@@ -6,7 +6,7 @@ const membersContainer = document.querySelector("#members");
 const gridButton = document.querySelector("#grid");
 const listButton = document.querySelector("#list");
 
-const MEMBERSHIP_LABELS = { 1: "Member", 2: "Silver", 3: "Gold" };
+const MEMBERSHIP_LABELS = { 1: "Member", 2: "Silver Member", 3: "Gold Member" };
 
 // --- Fetch the member data and render it ----------------------------------
 async function getMembers() {
@@ -40,7 +40,7 @@ function displayMembers(members) {
         <p>${member.address}</p>
         <p><a href="tel:${telHref}">${member.phone}</a></p>
         <a class="member-link" href="${member.website}" target="_blank" rel="noopener">Visit Website</a>
-        <span class="badge badge-${member.membership}">${label} Member</span>
+        <span class="badge badge-${member.membership}">${label}</span>
       </div>
     `;
 

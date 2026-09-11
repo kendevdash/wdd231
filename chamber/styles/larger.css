@@ -58,9 +58,4 @@
   #members.grid {
     grid-template-columns: repeat(3, 1fr);
   }
-
-  #members.list .member-card img {
-    width: 9rem;
-    height: 9rem;
-  }
 }

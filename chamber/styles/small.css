@@ -25,6 +25,7 @@
   --radius: 10px;
   --shadow: 0 3px 12px rgba(20, 53, 94, 0.12);
   --maxw: 68rem;
+  --transition: 160ms ease;
 
   --font-heading: "Merriweather", Georgia, "Times New Roman", serif;
   --font-body: "Inter", "Segoe UI", Roboto, Arial, sans-serif;
@@ -105,7 +106,7 @@ nav a {
   font-weight: 600;
   border-top: 1px solid rgba(255, 255, 255, 0.14);
   border-left: 4px solid transparent;
-  transition: background-color 160ms ease, border-color 160ms ease;
+  transition: background-color var(--transition), border-color var(--transition);
 }
 
 nav a:hover,
@@ -163,7 +164,7 @@ h1 {
   color: var(--primary);
   font-weight: 600;
   background-color: var(--surface);
-  transition: background-color 160ms ease, color 160ms ease;
+  transition: background-color var(--transition), color var(--transition);
 }
 
 .view-buttons svg {
@@ -225,10 +226,9 @@ h1 {
   object-fit: cover;
 }
 
+/* Rubric: list view shows member information without images */
 #members.list .member-card img {
-  width: 7rem;
-  height: 7rem;
-  flex-shrink: 0;
+  display: none;
 }
 
 .member-body {
@@ -321,7 +321,7 @@ footer :focus-visible {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  * {
-    transition: none !important;
+  :root {
+    --transition: 0ms;
   }
 }
