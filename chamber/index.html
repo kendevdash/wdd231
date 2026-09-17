@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Provo Valley Chamber of Commerce | Home</title>
+  <meta name="description" content="Provo Valley Chamber of Commerce home page: upcoming events, local weather, and spotlights on our member businesses in Provo, Utah.">
+  <meta name="author" content="Ken Dash">
+
+  <meta property="og:title" content="Provo Valley Chamber of Commerce">
+  <meta property="og:description" content="Connecting Provo Valley businesses with the community: events, weather, and member spotlights.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://kendevdash.github.io/wdd231/chamber/images/og-image.svg">
+  <meta property="og:image:type" content="image/svg+xml">
+  <meta property="og:url" content="https://kendevdash.github.io/wdd231/chamber/index.html">
+
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700;900&family=Inter:wght@400;600;700&display=swap">
+
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+
+  <script src="scripts/home.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="header-bar">
+      <div class="brand">
+        <img src="images/favicon.svg" alt="Provo Valley Chamber of Commerce logo" width="44" height="44">
+        <span class="brand-name">Provo Valley Chamber</span>
+      </div>
+      <button id="menu-button" aria-label="Open menu" aria-expanded="false" aria-controls="primary-nav">&#9776;</button>
+    </div>
+    <nav id="primary-nav">
+      <a href="index.html" class="active" aria-current="page">Home</a>
+      <a href="discover.html">Discover</a>
+      <a href="directory.html">Directory</a>
+      <a href="join.html">Join</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <img
+        src="images/hero-large.webp"
+        srcset="images/hero-small.webp 700w, images/hero-large.webp 1200w"
+        sizes="100vw"
+        alt="Aerial view of the Provo Canyon entrance and the Wasatch mountains above Provo, Utah"
+        width="1200" height="480"
+        loading="eager">
+      <div class="hero-overlay">
+        <h1>Provo Valley Chamber of Commerce</h1>
+        <p>Connecting Provo Valley businesses with the community since 1985.</p>
+        <a class="cta-button" href="join.html">Join the Chamber</a>
+      </div>
+    </section>
+
+    <section class="info-columns">
+      <div class="events" aria-labelledby="events-heading">
+        <h2 id="events-heading">Upcoming Events</h2>
+        <ul class="event-list">
+          <li class="event-card">
+            <p class="event-date">Oct 8, 2026</p>
+            <h3>Business After Hours Mixer</h3>
+            <p>Network with fellow members over appetizers, hosted this month by Provo River Outfitters.</p>
+          </li>
+          <li class="event-card">
+            <p class="event-date">Oct 15, 2026</p>
+            <h3>Ribbon Cutting: Heritage Square Dental</h3>
+            <p>Celebrate the grand opening of their newly remodeled Provo location.</p>
+          </li>
+          <li class="event-card">
+            <p class="event-date">Nov 4, 2026</p>
+            <h3>Chamber Luncheon: Growing Your Small Business</h3>
+            <p>A guest speaker panel on funding, marketing, and hiring for Utah Valley entrepreneurs.</p>
+          </li>
+        </ul>
+      </div>
+
+      <div class="weather" aria-labelledby="weather-heading">
+        <h2 id="weather-heading">Provo Weather</h2>
+        <div class="weather-now" id="weather-now">
+          <p class="loading">Loading current conditions&hellip;</p>
+        </div>
+        <div class="forecast" id="forecast" aria-label="Three day forecast">
+          <p class="loading">Loading forecast&hellip;</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="spotlights" aria-labelledby="spotlights-heading">
+      <h2 id="spotlights-heading">Member Spotlights</h2>
+      <div class="card-grid grid" id="spotlights" aria-live="polite">
+        <p class="loading">Loading member spotlights&hellip;</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p class="chamber-name">Provo Valley Chamber of Commerce</p>
+    <p>123 Center Street, Provo, UT 84601</p>
+    <p>info@provovalleychamber.example &bull; (801) 555-0100</p>
+    <p>&copy; <span id="currentyear"></span> Ken Dash &bull; WDD 231</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>
