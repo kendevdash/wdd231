@@ -5,7 +5,7 @@
 const MEMBERSHIP_LABELS = { 1: "Member", 2: "Silver Member", 3: "Gold Member" };
 
 // --- Weather: OpenWeatherMap (Current Weather + 5 day / 3 hour Forecast) --
-const WEATHER_API_KEY = "REPLACE_WITH_YOUR_OPENWEATHERMAP_KEY";
+const WEATHER_API_KEY = "f454328b513b327b1a704996a7f61d64";
 const PROVO_LAT = 40.2338;
 const PROVO_LON = -111.6585;
 
