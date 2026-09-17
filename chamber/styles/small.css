@@ -462,6 +462,16 @@ h1 {
   font-weight: 600;
 }
 
+.forecast .loading {
+  grid-column: 1 / -1;
+  background-color: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: var(--space-2);
+  margin: 0;
+}
+
 /* --------------------------------------------------------------------------
    Footer
    -------------------------------------------------------------------------- */
