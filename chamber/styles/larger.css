@@ -63,6 +63,15 @@
   .info-columns {
     grid-template-columns: 1fr 1fr;
   }
+
+  .join-layout {
+    grid-template-columns: 1.4fr 1fr;
+    align-items: start;
+  }
+
+  .membership-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media only screen and (min-width: 64rem) {

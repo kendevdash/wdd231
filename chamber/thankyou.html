@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Provo Valley Chamber of Commerce | Thank You</title>
+  <meta name="description" content="Confirmation page for a Provo Valley Chamber of Commerce membership application.">
+  <meta name="author" content="Ken Dash">
+
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700;900&family=Inter:wght@400;600;700&display=swap">
+
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+
+  <script src="scripts/thankyou.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="header-bar">
+      <div class="brand">
+        <img src="images/favicon.svg" alt="Provo Valley Chamber of Commerce logo" width="44" height="44">
+        <span class="brand-name">Provo Valley Chamber</span>
+      </div>
+      <button id="menu-button" aria-label="Open menu" aria-expanded="false" aria-controls="primary-nav">&#9776;</button>
+    </div>
+    <nav id="primary-nav">
+      <a href="index.html">Home</a>
+      <a href="discover.html">Discover</a>
+      <a href="directory.html">Directory</a>
+      <a href="join.html">Join</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Thank You!</h1>
+    <p class="lead">Thanks for applying to join the Provo Valley Chamber of Commerce. Our team will review your application and be in touch soon.</p>
+
+    <dl class="application-summary">
+      <div class="summary-row">
+        <dt>First Name</dt>
+        <dd id="out-firstName"></dd>
+      </div>
+      <div class="summary-row">
+        <dt>Last Name</dt>
+        <dd id="out-lastName"></dd>
+      </div>
+      <div class="summary-row">
+        <dt>Email Address</dt>
+        <dd id="out-email"></dd>
+      </div>
+      <div class="summary-row">
+        <dt>Mobile Phone</dt>
+        <dd id="out-phone"></dd>
+      </div>
+      <div class="summary-row">
+        <dt>Business/Organization</dt>
+        <dd id="out-businessName"></dd>
+      </div>
+      <div class="summary-row">
+        <dt>Submitted</dt>
+        <dd id="out-timestamp"></dd>
+      </div>
+    </dl>
+  </main>
+
+  <footer>
+    <p class="chamber-name">Provo Valley Chamber of Commerce</p>
+    <p>123 Center Street, Provo, UT 84601</p>
+    <p>info@provovalleychamber.example &bull; (801) 555-0100</p>
+    <p>&copy; <span id="currentyear"></span> Ken Dash &bull; WDD 231</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>

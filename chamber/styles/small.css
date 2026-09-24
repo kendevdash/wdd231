@@ -495,6 +495,236 @@ footer p {
 }
 
 /* --------------------------------------------------------------------------
+   Join page – form + membership cards
+   -------------------------------------------------------------------------- */
+
+.join-layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-4);
+  margin-bottom: var(--space-4);
+}
+
+.join-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  background-color: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: var(--space-3);
+}
+
+.required-note {
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--ink-soft);
+}
+
+.join-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  font-weight: 600;
+  color: var(--primary);
+}
+
+.join-form input,
+.join-form select,
+.join-form textarea {
+  font: inherit;
+  padding: 0.6rem 0.75rem;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  color: var(--ink);
+  background-color: var(--surface);
+}
+
+.join-form textarea {
+  min-height: 6rem;
+  resize: vertical;
+}
+
+.join-form input[type="submit"] {
+  align-self: flex-start;
+  margin-top: var(--space-1);
+  background-color: var(--accent-text);
+  color: #ffffff;
+  font-weight: 700;
+  border: none;
+  border-radius: 999px;
+  padding: 0.7rem 1.6rem;
+  cursor: pointer;
+  transition: background-color var(--transition);
+}
+
+.join-form input[type="submit"]:hover,
+.join-form input[type="submit"]:focus-visible {
+  background-color: #6e480d;
+}
+
+/* Cards fade/slide in once on load; distinct from the hover transitions
+   already used elsewhere on the site. */
+.membership-cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-2);
+}
+
+.membership-card {
+  background-color: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: var(--space-2);
+  text-align: center;
+  opacity: 0;
+  animation: card-in 500ms ease forwards;
+}
+
+.membership-card:nth-child(2) { animation-delay: 120ms; }
+.membership-card:nth-child(3) { animation-delay: 240ms; }
+.membership-card:nth-child(4) { animation-delay: 360ms; }
+
+@keyframes card-in {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .membership-card {
+    animation: none;
+    opacity: 1;
+  }
+}
+
+.membership-card h2 {
+  font-size: 1.05rem;
+  color: var(--primary);
+  margin: 0 0 0.4rem;
+}
+
+.membership-card p {
+  color: var(--ink-soft);
+  font-size: 0.88rem;
+  margin: 0 0 0.6rem;
+}
+
+.membership-card button {
+  background: none;
+  border: none;
+  padding: 0;
+  font: inherit;
+  font-weight: 700;
+  color: var(--primary);
+  text-decoration: underline;
+  cursor: pointer;
+  transition: color var(--transition);
+}
+
+.membership-card button:hover,
+.membership-card button:focus-visible {
+  color: var(--accent-text);
+}
+
+/* --------------------------------------------------------------------------
+   Membership benefit modals
+   -------------------------------------------------------------------------- */
+
+dialog.benefits-modal {
+  /* normalize.css resets margin to 0 on every element, which breaks the
+     UA stylesheet's margin:auto centering for a modal <dialog>. Restore
+     it here so the modal stays centered in the viewport. */
+  margin: auto;
+  max-width: 28rem;
+  width: 90%;
+  max-height: 85vh;
+  overflow-y: auto;
+  border: none;
+  border-radius: var(--radius);
+  box-shadow: 0 10px 40px rgba(6, 20, 30, 0.3);
+  padding: var(--space-3);
+  color: var(--ink);
+}
+
+dialog.benefits-modal::backdrop {
+  background-color: rgba(20, 53, 94, 0.55);
+}
+
+dialog.benefits-modal h2 {
+  margin-top: 0;
+  color: var(--primary);
+}
+
+dialog.benefits-modal ul {
+  padding-left: 1.2rem;
+  color: var(--ink-soft);
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+dialog.benefits-modal .modal-close {
+  margin-top: var(--space-3);
+  background-color: var(--primary);
+  color: #ffffff;
+  border: none;
+  border-radius: 999px;
+  padding: 0.5rem 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color var(--transition);
+}
+
+dialog.benefits-modal .modal-close:hover,
+dialog.benefits-modal .modal-close:focus-visible {
+  background-color: var(--primary-light);
+}
+
+/* --------------------------------------------------------------------------
+   Thank-you page – application summary
+   -------------------------------------------------------------------------- */
+
+.application-summary {
+  background-color: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: var(--space-3);
+  margin: 0;
+}
+
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--space-2);
+  padding: 0.6rem 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.summary-row:last-child {
+  border-bottom: none;
+}
+
+.summary-row dt {
+  font-weight: 600;
+  color: var(--primary);
+}
+
+.summary-row dd {
+  margin: 0;
+  color: var(--ink-soft);
+  text-align: right;
+}
+
+/* --------------------------------------------------------------------------
    Accessibility helpers
    -------------------------------------------------------------------------- */
 
