@@ -23,7 +23,7 @@
   --space-4: 2rem;
 
   --radius: 10px;
-  --shadow: 0 3px 12px rgba(20, 53, 94, 0.12);
+  --shadow: 0 3px 12px #14355e1f;
   --maxw: 68rem;
   --transition: 160ms ease;
 
@@ -80,13 +80,13 @@ header {
   font-size: 1.5rem;
   line-height: 1;
   color: #ffffff;
-  border: 2px solid rgba(255, 255, 255, 0.55);
+  border: 2px solid #ffffff8c;
   border-radius: 8px;
 }
 
 #menu-button:hover,
 #menu-button:focus-visible {
-  background-color: rgba(255, 255, 255, 0.14);
+  background-color: #ffffff24;
 }
 
 /* nav is a Flex container; collapsed on small screens until .open */
@@ -104,14 +104,14 @@ nav a {
   padding: 0.85rem var(--space-2);
   color: #ffffff;
   font-weight: 600;
-  border-top: 1px solid rgba(255, 255, 255, 0.14);
+  border-top: 1px solid #ffffff24;
   border-left: 4px solid transparent;
   transition: background-color var(--transition), border-color var(--transition);
 }
 
 nav a:hover,
 nav a:focus-visible {
-  background-color: rgba(255, 255, 255, 0.14);
+  background-color: #ffffff24;
   border-left-color: var(--accent);
 }
 
@@ -649,13 +649,13 @@ dialog.benefits-modal {
   overflow-y: auto;
   border: none;
   border-radius: var(--radius);
-  box-shadow: 0 10px 40px rgba(6, 20, 30, 0.3);
+  box-shadow: 0 10px 40px #06141e4c;
   padding: var(--space-3);
   color: var(--ink);
 }
 
 dialog.benefits-modal::backdrop {
-  background-color: rgba(20, 53, 94, 0.55);
+  background-color: #14355e8c;
 }
 
 dialog.benefits-modal h2 {
