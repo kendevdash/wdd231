@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Website Plan: Wasatch Trail Trekkers &ndash; WDD 231 &ndash; Ken Dash</title>
+  <meta name="description" content="WDD 231 individual project site plan for Wasatch Trail Trekkers, a Utah hiking club site, by Ken Dash: site purpose, scenarios, color schema, typography, and wireframes.">
+  <meta name="author" content="Ken Dash">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Loaded non-blocking so the font request doesn't hold up first paint. -->
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Nunito+Sans:wght@400;600;700&display=swap">
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Nunito+Sans:wght@400;600;700&display=swap"
+    media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Nunito+Sans:wght@400;600;700&display=swap"></noscript>
+
+  <link rel="stylesheet" href="styles/siteplan.css">
+  <script src="scripts/siteplan.js" defer></script>
+</head>
+<body>
+  <header>
+    <p class="eyebrow">WDD 231 &middot; Individual Project &middot; Website Plan</p>
+    <h1>Wasatch Trail Trekkers</h1>
+    <p class="tagline">A site plan by Ken Dash</p>
+  </header>
+
+  <main>
+    <section id="site-name" aria-labelledby="site-name-heading">
+      <h2 id="site-name-heading">Site Name</h2>
+      <p class="site-name-display">Wasatch Trail Trekkers</p>
+      <p>
+        I chose this name because the site is for a hiking club centered on Utah's Wasatch
+        Front, and &ldquo;Trekkers&rdquo; signals an active, get-outside community rather than
+        a passive brochure site. It's short, easy to say out loud at a trailhead, and makes the
+        geographic focus obvious.
+      </p>
+      <p class="domain-note">Optional domain availability: <code>wasatchtrailtrekkers.org</code></p>
+    </section>
+
+    <section id="site-purpose" aria-labelledby="purpose-heading">
+      <h2 id="purpose-heading">Site Purpose</h2>
+      <p>
+        Wasatch Trail Trekkers gives Utah hikers one place to find trail recommendations by
+        difficulty and season, practical gear guidance, and a schedule of upcoming group hikes
+        &mdash; so both brand-new and experienced hikers can get out into the Wasatch mountains
+        safely and with company.
+      </p>
+    </section>
+
+    <section id="scenarios" aria-labelledby="scenarios-heading">
+      <h2 id="scenarios-heading">Scenarios</h2>
+      <p>Questions a site visitor might be asking that the content needs to answer:</p>
+      <ol>
+        <li>&ldquo;I'm new to hiking and bringing my kids along &mdash; which nearby trail is short, safe, and family-friendly?&rdquo;</li>
+        <li>&ldquo;When and where is the next group hike, and how do I sign up?&rdquo;</li>
+        <li>&ldquo;What gear do I actually need to stay safe on a winter hike in the Wasatch mountains?&rdquo;</li>
+      </ol>
+    </section>
+
+    <section id="color-schema" aria-labelledby="color-heading">
+      <h2 id="color-heading">Color Scheme</h2>
+      <p>
+        A deep forest green paired with a warm trail-clay accent on a soft parchment
+        background, evoking mountain trails and topographic maps while staying easy to read.
+        This document uses the schema below.
+      </p>
+      <ul class="swatches">
+        <li>
+          <span class="swatch swatch-primary"></span>
+          <span class="swatch-label"><strong>Forest Green</strong> <code>#2f5233</code> &mdash; headings, header/footer background, navigation</span>
+        </li>
+        <li>
+          <span class="swatch swatch-accent"></span>
+          <span class="swatch-label"><strong>Trail Clay</strong> <code>#9c4a1a</code> &mdash; links, buttons, accents</span>
+        </li>
+        <li>
+          <span class="swatch swatch-bg"></span>
+          <span class="swatch-label"><strong>Parchment</strong> <code>#f6f3ea</code> &mdash; page background</span>
+        </li>
+        <li>
+          <span class="swatch swatch-surface swatch-bordered"></span>
+          <span class="swatch-label"><strong>White</strong> <code>#ffffff</code> &mdash; card backgrounds</span>
+        </li>
+        <li>
+          <span class="swatch swatch-ink"></span>
+          <span class="swatch-label"><strong>Charcoal</strong> <code>#2b2a25</code> &mdash; body text</span>
+        </li>
+      </ul>
+    </section>
+
+    <section id="typography" aria-labelledby="typography-heading">
+      <h2 id="typography-heading">Typography</h2>
+      <p>Two Google Fonts, kept deliberately simple:</p>
+      <p class="font-sample font-sample-heading">
+        Oswald &mdash; headings and navigation
+        <span>Aa Bb Cc 0123</span>
+      </p>
+      <p class="font-sample font-sample-body">
+        Nunito Sans &mdash; body text and captions
+        <span>Aa Bb Cc 0123</span>
+      </p>
+    </section>
+
+    <section id="wireframes" aria-labelledby="wireframes-heading">
+      <h2 id="wireframes-heading">Wireframes</h2>
+      <p>
+        Home page layout, mobile and desktop views &mdash; hand-drawn sketches, not
+        AI- or tool-generated. Photograph or scan each sketch and save it into
+        <code>images/</code> using the filenames noted below; the placeholder box will be
+        replaced with that image.
+      </p>
+
+      <div class="wireframes">
+        <figure>
+          <figcaption>Mobile</figcaption>
+          <div class="wireframe-placeholder">
+            <p>Add your hand-drawn mobile wireframe here.</p>
+            <p class="filename">Save as <code>images/wireframe-mobile.png</code>, then replace this placeholder &lt;div&gt; with:</p>
+            <code>&lt;img src="images/wireframe-mobile.png" alt="Hand-drawn mobile wireframe of the Wasatch Trail Trekkers home page" width="320"&gt;</code>
+          </div>
+        </figure>
+
+        <figure>
+          <figcaption>Desktop</figcaption>
+          <div class="wireframe-placeholder wireframe-placeholder-wide">
+            <p>Add your hand-drawn desktop wireframe here.</p>
+            <p class="filename">Save as <code>images/wireframe-desktop.png</code>, then replace this placeholder &lt;div&gt; with:</p>
+            <code>&lt;img src="images/wireframe-desktop.png" alt="Hand-drawn desktop wireframe of the Wasatch Trail Trekkers home page" width="560"&gt;</code>
+          </div>
+        </figure>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentyear"></span> Ken Dash &bull; Utah, USA</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>
