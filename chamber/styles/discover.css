@@ -1,0 +1,156 @@
+/* ==========================================================================
+   Provo Valley Chamber of Commerce – discover.css
+   Mobile-first. Three distinct grid-template-areas layouts (not just a
+   changing column count) at 641px and 1025px, per the assignment spec.
+   ========================================================================== */
+
+.visit-message {
+  background-color: var(--surface);
+  border-left: 4px solid var(--accent-text);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: var(--space-2) var(--space-3);
+  margin-bottom: var(--space-3);
+  font-weight: 600;
+  color: var(--primary);
+}
+
+/* --------------------------------------------------------------------------
+   Grid – single column on mobile
+   -------------------------------------------------------------------------- */
+
+.discover-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "card1"
+    "card2"
+    "card3"
+    "card4"
+    "card5"
+    "card6"
+    "card7"
+    "card8";
+  gap: var(--space-3);
+}
+
+.discover-card:nth-child(1) { grid-area: card1; }
+.discover-card:nth-child(2) { grid-area: card2; }
+.discover-card:nth-child(3) { grid-area: card3; }
+.discover-card:nth-child(4) { grid-area: card4; }
+.discover-card:nth-child(5) { grid-area: card5; }
+.discover-card:nth-child(6) { grid-area: card6; }
+.discover-card:nth-child(7) { grid-area: card7; }
+.discover-card:nth-child(8) { grid-area: card8; }
+
+.discover-card {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+.discover-card h2 {
+  margin: 0;
+  padding: var(--space-2) var(--space-2) 0;
+  font-size: 1.1rem;
+  color: var(--primary);
+}
+
+.discover-card figure {
+  flex: 1;
+  min-height: 160px;
+  margin: var(--space-1) 0 0;
+}
+
+.discover-card img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.discover-card address {
+  margin: var(--space-2) var(--space-2) 0;
+  font-style: normal;
+  font-weight: 600;
+  color: var(--accent-text);
+  font-size: 0.85rem;
+}
+
+.discover-card p {
+  margin: 0.4rem var(--space-2) var(--space-2);
+  color: var(--ink-soft);
+  font-size: 0.92rem;
+}
+
+.discover-card button {
+  margin: 0 var(--space-2) var(--space-2);
+  align-self: flex-start;
+  padding: 0.5rem 1.1rem;
+  border: none;
+  border-radius: 999px;
+  background-color: var(--primary);
+  color: #ffffff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color var(--transition);
+}
+
+.discover-card button:hover,
+.discover-card button:focus-visible {
+  background-color: var(--primary-light);
+}
+
+/* --------------------------------------------------------------------------
+   Medium screens – two columns, with its own distinct layout (card3 and
+   card8 each span both columns as feature rows, not just a reflow).
+   -------------------------------------------------------------------------- */
+
+@media screen and (min-width: 641px) and (max-width: 1024px) {
+  .discover-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "card1 card2"
+      "card3 card3"
+      "card4 card5"
+      "card6 card7"
+      "card8 card8";
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Large screens – four columns in a magazine-style layout, with card1 and
+   card8 as wide feature cards and card2/card6 as tall side cards.
+   -------------------------------------------------------------------------- */
+
+@media screen and (min-width: 1025px) {
+  .discover-grid {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+      "card1 card1 card2 card3"
+      "card4 card5 card2 card6"
+      "card7 card8 card8 card6";
+  }
+
+  /* Hover/zoom effect is intentionally limited to large screens only. */
+  .discover-card img {
+    transition: transform 300ms ease, opacity 300ms ease, filter 300ms ease;
+  }
+
+  .discover-card:hover img,
+  .discover-card:focus-within img {
+    transform: scale(1.05);
+    opacity: 0.9;
+    filter: brightness(1.05);
+  }
+}
+
+@media screen and (min-width: 1025px) and (prefers-reduced-motion: reduce) {
+  .discover-card img {
+    transition: none;
+  }
+}

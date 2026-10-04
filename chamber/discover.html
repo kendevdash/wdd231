@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Provo Valley Chamber of Commerce | Discover</title>
+  <meta name="description" content="Discover eight places worth visiting in the Provo, Utah area, from BYU campus to Bridal Veil Falls.">
+  <meta name="author" content="Ken Dash">
+
+  <meta property="og:title" content="Discover Provo | Provo Valley Chamber of Commerce">
+  <meta property="og:description" content="Eight places worth visiting in the Provo Valley, Utah area.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://kendevdash.github.io/wdd231/chamber/images/og-image.svg">
+  <meta property="og:image:type" content="image/svg+xml">
+  <meta property="og:url" content="https://kendevdash.github.io/wdd231/chamber/discover.html">
+
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Loaded non-blocking so the font request doesn't hold up first paint. -->
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700;900&family=Inter:wght@400;600;700&display=swap">
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700;900&family=Inter:wght@400;600;700&display=swap"
+    media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700;900&family=Inter:wght@400;600;700&display=swap"></noscript>
+
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+  <link rel="stylesheet" href="styles/discover.css">
+
+  <script type="module" src="scripts/discover.js"></script>
+</head>
+<body>
+  <header>
+    <div class="header-bar">
+      <div class="brand">
+        <img src="images/favicon.svg" alt="Provo Valley Chamber of Commerce logo" width="44" height="44">
+        <span class="brand-name">Provo Valley Chamber</span>
+      </div>
+      <button id="menu-button" aria-label="Open menu" aria-expanded="false" aria-controls="primary-nav">&#9776;</button>
+    </div>
+    <nav id="primary-nav">
+      <a href="index.html">Home</a>
+      <a href="discover.html" class="active" aria-current="page">Discover</a>
+      <a href="directory.html">Directory</a>
+      <a href="join.html">Join</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Discover the Provo Valley</h1>
+    <p class="lead">Eight places that make the Provo area worth exploring, from campus landmarks to canyon trails.</p>
+
+    <div id="visit-message" class="visit-message" aria-live="polite"></div>
+
+    <section id="discover-grid" class="discover-grid" aria-label="Places of interest">
+      <p class="loading">Loading places to discover&hellip;</p>
+    </section>
+  </main>
+
+  <footer>
+    <p class="chamber-name">Provo Valley Chamber of Commerce</p>
+    <p>123 Center Street, Provo, UT 84601</p>
+    <p>info@provovalleychamber.example &bull; (801) 555-0100</p>
+    <p>&copy; <span id="currentyear"></span> Ken Dash &bull; WDD 231</p>
+    <p id="lastModified"></p>
+    <p class="credits">
+      Photos via Wikimedia Commons, cropped and resized:
+      <a href="https://commons.wikimedia.org/wiki/File:Brigham_Young_University_Campus_-_BYU_-_Provo_-_Utah_in_Autumn.jpg">BYU</a> by Tony Webster (<a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a>) &middot;
+      <a href="https://commons.wikimedia.org/wiki/File:Provo_City_Center_Temple_02.jpg">Provo City Center Temple</a> by FallingGravity (<a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>) &middot;
+      <a href="https://commons.wikimedia.org/wiki/File:Bridal_Veil_Falls_Provo_Utah.jpg">Bridal Veil Falls</a> by Mike Scalora (<a href="https://creativecommons.org/licenses/by-sa/2.5/">CC BY-SA 2.5</a>) &middot;
+      <a href="https://commons.wikimedia.org/wiki/File:RockCanyon.jpg">Rock Canyon</a> (public domain) &middot;
+      <a href="https://commons.wikimedia.org/wiki/File:Utah_Lake_from_Springville.JPG">Utah Lake</a> by Bobjgalindo (<a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a>) &middot;
+      <a href="https://commons.wikimedia.org/wiki/File:Springville_Utah_Art_Museum.JPG">Springville Museum of Art</a> by Sbharris (<a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a>) &middot;
+      <a href="https://commons.wikimedia.org/wiki/File:Upper_Provo_River_Utah.jpg">Provo River</a> by outkast9821 (<a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a>) &middot;
+      <a href="https://commons.wikimedia.org/wiki/File:Peaks_Ice_Arena_(35050712854).jpg">Peaks Ice Arena</a> by Ben P L (<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA 2.0</a>)
+    </p>
+  </footer>
+</body>
+</html>
