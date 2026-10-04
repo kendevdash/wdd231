@@ -4,6 +4,18 @@
    changing column count) at 641px and 1025px, per the assignment spec.
    ========================================================================== */
 
+/* Footer photo-credit links: without this, <a> falls back to the
+   browser's default link blue, which fails contrast against the navy
+   footer background (flagged: 1.31:1, needs 4.5:1). */
+.credits {
+  font-size: 0.8rem;
+  opacity: 0.85;
+}
+
+.credits a {
+  color: inherit;
+}
+
 .visit-message {
   background-color: var(--surface);
   border-left: 4px solid var(--accent-text);
