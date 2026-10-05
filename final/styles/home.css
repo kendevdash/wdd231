@@ -6,8 +6,7 @@
   padding: 2rem;
   background-color: var(--dark-green);
   background-image:
-    linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    linear-gradient(135deg, rgba(0, 107, 63, 0.88), rgba(206, 17, 38, 0.78)),
+    linear-gradient(135deg, rgba(0, 77, 45, 0.95), rgba(206, 17, 38, 0.9)),
     url("../images/ghana-hero.webp");
   background-size: cover;
   background-position: center;
