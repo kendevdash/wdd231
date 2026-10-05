@@ -1,0 +1,136 @@
+.page-heading {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 2rem;
+}
+
+.eyebrow {
+  color: var(--red);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.explore-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  max-width: 400px;
+  margin: 0 auto 2rem;
+}
+
+.explore-controls select {
+  padding: 0.8rem;
+  border: 2px solid var(--green);
+  border-radius: 8px;
+  background: var(--white);
+}
+
+.attractions-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.attraction-card {
+  background: var(--white);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+}
+
+.attraction-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 1.5rem;
+  position: relative;
+}
+
+.card-number {
+  position: absolute;
+  top: -0.9rem;
+  right: 1rem;
+  background: var(--gold);
+  color: var(--dark);
+  padding: 0.3rem 0.6rem;
+  border-radius: 6px;
+  font-weight: 900;
+  font-size: 0.85rem;
+}
+
+.card-type {
+  color: var(--red);
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+}
+
+.details-button,
+#favorite-button {
+  border: none;
+  border-radius: 8px;
+  background: var(--green);
+  color: var(--white);
+  padding: 0.75rem 1rem;
+  font-weight: 700;
+}
+
+.details-button:hover,
+#favorite-button:hover {
+  background: var(--red);
+}
+
+.error-message {
+  background: #ffe5e5;
+  color: #8a0000;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+dialog {
+  width: min(90%, 650px);
+  border: none;
+  border-radius: 14px;
+  padding: 0;
+  margin: auto;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+  max-height: 85vh;
+  overflow-y: auto;
+}
+
+dialog::backdrop {
+  background: rgba(0, 0, 0, 0.65);
+}
+
+.dialog-content {
+  padding: 2rem;
+  position: relative;
+}
+
+.close-dialog {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  border: none;
+  background: transparent;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 600px) {
+  .attractions-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .attractions-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

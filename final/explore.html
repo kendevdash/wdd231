@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Explore Ghana | Attractions</title>
+
+  <meta name="description" content="Browse 15 attractions across Ghana, filter by category, and learn about each destination's history and location.">
+  <meta name="author" content="Kenneth Ighogboja">
+
+  <meta property="og:title" content="Explore Ghana | Attractions">
+  <meta property="og:description" content="Discover attractions and destinations across Ghana.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/kakum.webp">
+
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/explore.css">
+
+  <script type="module" src="scripts/explore.js"></script>
+</head>
+
+<body>
+
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header>
+    <div class="header-inner">
+
+      <a class="logo" href="index.html">
+        <span class="logo-mark" aria-hidden="true">EG</span>
+        <span>Explore Ghana</span>
+      </a>
+
+      <button
+        id="menu-button"
+        class="menu-button"
+        type="button"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+        aria-controls="navigation"
+      >☰</button>
+
+      <nav id="navigation" class="navigation" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a class="active" href="explore.html" aria-current="page">Explore</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <section class="page-heading">
+      <p class="eyebrow">Discover more</p>
+      <h1>Explore Ghana</h1>
+      <p>Browse destinations across Ghana and learn more about their history, culture, nature, and location.</p>
+    </section>
+
+    <div class="explore-controls">
+      <label for="category-filter">Filter by type</label>
+      <select id="category-filter">
+        <option value="all">All destinations</option>
+        <option value="Nature">Nature</option>
+        <option value="Heritage">Heritage</option>
+        <option value="Wildlife">Wildlife</option>
+        <option value="Culture">Culture</option>
+        <option value="History">History</option>
+        <option value="Museum">Museum</option>
+        <option value="Landmark">Landmark</option>
+      </select>
+    </div>
+
+    <p id="loading-message">Loading attractions...</p>
+    <p id="error-message" class="error-message" hidden></p>
+
+    <section id="attractions-list" class="attractions-grid" aria-label="Ghana attractions" aria-live="polite"></section>
+
+  </main>
+
+  <dialog id="attraction-dialog" aria-labelledby="dialog-title" aria-describedby="dialog-description">
+    <div class="dialog-content">
+
+      <button id="close-dialog" class="close-dialog" type="button" aria-label="Close attraction details">✕</button>
+
+      <h2 id="dialog-title">Attraction details</h2>
+      <p id="dialog-region"></p>
+      <p id="dialog-type"></p>
+      <p id="dialog-location"></p>
+      <p id="dialog-description"></p>
+
+      <button id="favorite-button" type="button"></button>
+
+    </div>
+  </dialog>
+
+  <footer>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="explore.html">Explore</a>
+      <a href="contact.html">Contact</a>
+      <a href="attributions.html">Attributions</a>
+    </div>
+
+    <p>&copy; <span id="current-year"></span> Explore Ghana | Kenneth Ighogboja</p>
+    <p>Last Modified: <span id="last-modified"></span></p>
+    <p><a href="https://youtube.com/" target="_blank" rel="noopener">Project Demonstration Video</a></p>
+  </footer>
+
+</body>
+</html>

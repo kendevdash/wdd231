@@ -1,0 +1,122 @@
+[
+  {
+    "name": "Kakum National Park",
+    "region": "Central Region",
+    "type": "Nature",
+    "location": "Near Cape Coast",
+    "description": "A rainforest destination known for its famous canopy walkway suspended high above the forest floor.",
+    "image": "images/kakum.webp"
+  },
+  {
+    "name": "Cape Coast Castle",
+    "region": "Central Region",
+    "type": "Heritage",
+    "location": "Cape Coast",
+    "description": "A historic coastal castle connected to Ghana's complex history, now a UNESCO World Heritage Site.",
+    "image": "images/cape-coast.webp"
+  },
+  {
+    "name": "Elmina Castle",
+    "region": "Central Region",
+    "type": "Heritage",
+    "location": "Elmina",
+    "description": "A historic castle and important heritage site on Ghana's coast, among the oldest European buildings in sub-Saharan Africa.",
+    "image": "images/elmina.webp"
+  },
+  {
+    "name": "Mole National Park",
+    "region": "Savannah Region",
+    "type": "Wildlife",
+    "location": "Northern Ghana",
+    "description": "Ghana's largest wildlife refuge, known for elephants, antelope, and walking safaris.",
+    "image": "images/mole.webp"
+  },
+  {
+    "name": "Kwame Nkrumah Memorial Park",
+    "region": "Greater Accra Region",
+    "type": "History",
+    "location": "Accra",
+    "description": "A memorial site and mausoleum dedicated to Ghana's first president and independence leader.",
+    "image": "images/kwame-nkrumah.webp"
+  },
+  {
+    "name": "Manhyia Palace Museum",
+    "region": "Ashanti Region",
+    "type": "Culture",
+    "location": "Kumasi",
+    "description": "A cultural and historical attraction connected to the Asante Kingdom and its royal history.",
+    "image": "images/manhyia.webp"
+  },
+  {
+    "name": "Wli Falls",
+    "region": "Volta Region",
+    "type": "Nature",
+    "location": "Hohoe",
+    "description": "The tallest waterfall in Ghana, reached by a scenic hike through the Agumatsa Wildlife Sanctuary.",
+    "image": "images/wli-falls.webp"
+  },
+  {
+    "name": "Aburi Botanical Gardens",
+    "region": "Eastern Region",
+    "type": "Nature",
+    "location": "Aburi",
+    "description": "A peaceful botanical destination in the hills of eastern Ghana, home to towering trees planted over a century ago.",
+    "image": "images/aburi.webp"
+  },
+  {
+    "name": "Shai Hills Resource Reserve",
+    "region": "Greater Accra Region",
+    "type": "Wildlife",
+    "location": "Shai Osudoku District",
+    "description": "A protected savanna reserve offering wildlife viewing, caves, and rock-climbing just outside Accra.",
+    "image": "images/shai-hills.webp"
+  },
+  {
+    "name": "Lake Bosomtwe",
+    "region": "Ashanti Region",
+    "type": "Nature",
+    "location": "Near Kumasi",
+    "description": "Ghana's only natural lake, formed inside a meteorite crater over a million years ago.",
+    "image": "images/lake-bosomtwe.webp"
+  },
+  {
+    "name": "Larabanga Mosque",
+    "region": "Savannah Region",
+    "type": "Culture",
+    "location": "Larabanga",
+    "description": "One of the oldest mosques in West Africa, built in a distinctive Sudanese mud-and-reed architectural style.",
+    "image": "images/larabanga.webp"
+  },
+  {
+    "name": "Paga Crocodile Pond",
+    "region": "Upper East Region",
+    "type": "Wildlife",
+    "location": "Paga",
+    "description": "A sacred pond where crocodiles are treated as spiritual guardians and live peacefully alongside the local community.",
+    "image": "images/paga.webp"
+  },
+  {
+    "name": "Boti Falls",
+    "region": "Eastern Region",
+    "type": "Nature",
+    "location": "Manya Krobo District",
+    "description": "A twin waterfall surrounded by forest and unusual rock formations, a popular day trip from Accra.",
+    "image": "images/boti.webp"
+  },
+  {
+    "name": "Akosombo Dam",
+    "region": "Eastern Region",
+    "type": "Landmark",
+    "location": "Akosombo",
+    "description": "The hydroelectric dam that created Lake Volta, one of the largest artificial lakes in the world.",
+    "image": "images/akosombo.webp"
+  },
+  {
+    "name": "National Museum of Ghana",
+    "region": "Greater Accra Region",
+    "type": "Museum",
+    "location": "Accra",
+    "description": "Ghana's oldest and largest museum, housing collections on the nation's history, art, and culture.",
+    "image": "images/national-museum.webp"
+  }
+]

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Explore Ghana | Message Received</title>
+
+  <meta name="description" content="Confirmation page showing the details submitted through the Explore Ghana contact form.">
+  <meta name="author" content="Kenneth Ighogboja">
+
+  <meta property="og:title" content="Explore Ghana | Message Received">
+  <meta property="og:description" content="Confirmation of a submitted contact form.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/ghana-hero.webp">
+
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/contact.css">
+
+  <script type="module" src="scripts/form.js"></script>
+</head>
+
+<body>
+
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header>
+    <div class="header-inner">
+
+      <a class="logo" href="index.html">
+        <span class="logo-mark" aria-hidden="true">EG</span>
+        <span>Explore Ghana</span>
+      </a>
+
+      <button
+        id="menu-button"
+        class="menu-button"
+        type="button"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+        aria-controls="navigation"
+      >☰</button>
+
+      <nav id="navigation" class="navigation" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="explore.html">Explore</a></li>
+          <li><a class="active" href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <section class="page-heading">
+      <p class="eyebrow">Thank you</p>
+      <h1>Message Received</h1>
+      <p>Here is what you submitted:</p>
+    </section>
+
+    <div class="two-col-layout">
+
+      <dl class="submission-summary">
+        <dt>Full Name</dt>
+        <dd id="submitted-name"></dd>
+
+        <dt>Email Address</dt>
+        <dd id="submitted-email"></dd>
+
+        <dt>What interests you?</dt>
+        <dd id="submitted-interest"></dd>
+
+        <dt>Message</dt>
+        <dd id="submitted-message"></dd>
+      </dl>
+
+      <aside class="info-panel callout-panel">
+        <img src="images/ghana-hero.webp" alt="Independence Square, Accra" width="480" height="320">
+        <h2>Akwaaba!</h2>
+        <p>That means "welcome" in Twi. We'll be in touch soon — in the meantime, keep exploring.</p>
+        <p><a class="primary-button" href="explore.html">Browse Attractions</a></p>
+      </aside>
+
+    </div>
+
+    <p><a href="contact.html">Back to Contact</a></p>
+
+  </main>
+
+  <footer>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="explore.html">Explore</a>
+      <a href="contact.html">Contact</a>
+      <a href="attributions.html">Attributions</a>
+    </div>
+
+    <p>&copy; <span id="current-year"></span> Explore Ghana | Kenneth Ighogboja</p>
+    <p>Last Modified: <span id="last-modified"></span></p>
+    <p><a href="https://youtube.com/" target="_blank" rel="noopener">Project Demonstration Video</a></p>
+  </footer>
+
+</body>
+</html>

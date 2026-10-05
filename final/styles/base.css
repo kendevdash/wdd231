@@ -1,0 +1,207 @@
+:root {
+  --red: #ce1126;
+  --gold: #fcd116;
+  --green: #006b3f;
+  --dark-green: #004d2d;
+  --dark: #17221c;
+  --light: #f8f9f4;
+  --white: #ffffff;
+  --gray: #e7e9e4;
+  --shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+  --radius: 12px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--dark);
+  background: var(--light);
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  color: var(--dark-green);
+}
+
+a:hover {
+  color: var(--red);
+}
+
+header {
+  background: var(--green);
+  color: var(--white);
+  padding: 1rem;
+}
+
+.header-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  color: var(--white);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+
+.logo:hover {
+  color: var(--gold);
+}
+
+.logo-mark {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: var(--gold);
+  color: var(--green);
+  display: grid;
+  place-items: center;
+  font-weight: 900;
+  flex-shrink: 0;
+}
+
+.menu-button {
+  border: 2px solid var(--gold);
+  background: transparent;
+  color: var(--white);
+  font-size: 1.5rem;
+  line-height: 1;
+  padding: 0.35rem 0.6rem;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.navigation {
+  display: none;
+  width: 100%;
+}
+
+.navigation.open {
+  display: block;
+}
+
+.navigation ul {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0;
+}
+
+.navigation a {
+  display: block;
+  color: var(--white);
+  text-decoration: none;
+  padding: 0.75rem 1rem;
+  border-radius: 6px;
+}
+
+.navigation a:hover,
+.navigation a.active {
+  background: var(--gold);
+  color: var(--dark);
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+footer {
+  background: var(--dark);
+  color: var(--white);
+  text-align: center;
+  padding: 2rem 1rem;
+  margin-top: 3rem;
+}
+
+footer a {
+  color: var(--gold);
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: auto;
+}
+
+.skip-link:focus {
+  left: 1rem;
+  top: 1rem;
+  background: var(--white);
+  color: var(--dark);
+  padding: 0.75rem;
+  z-index: 1000;
+}
+
+@media screen and (min-width: 700px) {
+  .menu-button {
+    display: none;
+  }
+
+  .navigation {
+    display: block;
+    width: auto;
+  }
+
+  .navigation ul {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 0;
+  }
+
+  .navigation a {
+    padding: 0.5rem 1rem;
+  }
+}

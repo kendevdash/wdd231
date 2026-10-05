@@ -1,0 +1,170 @@
+.page-heading {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 2rem;
+}
+
+.eyebrow {
+  color: var(--red);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.two-col-layout {
+  display: grid;
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.info-panel {
+  background: var(--white);
+  padding: 2rem;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  align-self: start;
+  position: sticky;
+  top: 1rem;
+}
+
+.info-panel h2 {
+  color: var(--green);
+  margin-top: 0;
+}
+
+.info-panel dt {
+  font-weight: 700;
+  color: var(--green);
+  margin-top: 1rem;
+}
+
+.info-panel dt:first-child {
+  margin-top: 0;
+}
+
+.info-panel dd {
+  margin: 0.2rem 0 0;
+}
+
+.info-panel ul {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+.callout-panel img {
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  background: var(--white);
+  padding: 2rem;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.contact-form label {
+  font-weight: 700;
+  margin-top: 0.8rem;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  padding: 0.75rem;
+  border: 2px solid var(--gray);
+  border-radius: 8px;
+}
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: var(--green);
+}
+
+.contact-form button {
+  margin-top: 1.5rem;
+  border: none;
+  border-radius: 8px;
+  background: var(--green);
+  color: var(--white);
+  padding: 0.9rem 1.4rem;
+  font-weight: 700;
+}
+
+.contact-form button:hover {
+  background: var(--red);
+}
+
+.submission-summary {
+  background: var(--white);
+  padding: 2rem;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  align-self: start;
+}
+
+.submission-summary dt {
+  font-weight: 700;
+  color: var(--green);
+  margin-top: 1rem;
+}
+
+.submission-summary dd {
+  margin: 0.2rem 0 0;
+}
+
+.credits-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.75rem;
+}
+
+.credit-card {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: var(--light);
+  padding: 0.6rem;
+  border-radius: 8px;
+}
+
+.credit-card img {
+  width: 70px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 6px;
+  flex-shrink: 0;
+}
+
+.credit-card .credit-text {
+  font-size: 0.82rem;
+  margin: 0;
+}
+
+@media screen and (min-width: 800px) {
+  .two-col-layout {
+    grid-template-columns: 1.2fr 1fr;
+  }
+}
+
+.primary-button {
+  display: inline-block;
+  margin-top: 1.5rem;
+  background: var(--gold);
+  color: var(--dark);
+  text-decoration: none;
+  font-weight: 700;
+  padding: 0.8rem 1.4rem;
+  border-radius: 8px;
+}
+
+.primary-button:hover {
+  background: var(--green);
+  color: var(--white);
+}

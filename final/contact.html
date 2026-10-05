@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Explore Ghana | Contact</title>
+
+  <meta name="description" content="Get in touch with Explore Ghana to ask questions or share what interests you most about traveling to Ghana.">
+  <meta name="author" content="Kenneth Ighogboja">
+
+  <meta property="og:title" content="Explore Ghana | Contact">
+  <meta property="og:description" content="Get in touch with Explore Ghana.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/ghana-hero.webp">
+
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/contact.css">
+
+  <script type="module" src="scripts/form.js"></script>
+</head>
+
+<body>
+
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header>
+    <div class="header-inner">
+
+      <a class="logo" href="index.html">
+        <span class="logo-mark" aria-hidden="true">EG</span>
+        <span>Explore Ghana</span>
+      </a>
+
+      <button
+        id="menu-button"
+        class="menu-button"
+        type="button"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+        aria-controls="navigation"
+      >☰</button>
+
+      <nav id="navigation" class="navigation" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="explore.html">Explore</a></li>
+          <li><a class="active" href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <section class="page-heading">
+      <p class="eyebrow">We would love to hear from you</p>
+      <h1>Contact Us</h1>
+      <p>Have a question about traveling to Ghana? Send us a message and let us know what interests you.</p>
+    </section>
+
+    <div class="two-col-layout">
+
+      <form class="contact-form" action="form-action.html" method="get">
+
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" required autocomplete="name">
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" required autocomplete="email">
+
+        <label for="interest">What interests you?</label>
+        <select id="interest" name="interest" required>
+          <option value="">Choose one...</option>
+          <option value="History">History</option>
+          <option value="Nature">Nature</option>
+          <option value="Wildlife">Wildlife</option>
+          <option value="Culture">Culture</option>
+        </select>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="6" required></textarea>
+
+        <button type="submit">Send Message</button>
+
+      </form>
+
+      <aside class="info-panel">
+        <h2>Before You Go</h2>
+        <dl>
+          <dt>Currency</dt>
+          <dd>Ghanaian Cedi (GHS)</dd>
+
+          <dt>Official Language</dt>
+          <dd>English</dd>
+
+          <dt>Time Zone</dt>
+          <dd>GMT (UTC+0), no daylight saving</dd>
+
+          <dt>Best Time to Visit</dt>
+          <dd>November to March, during the dry season</dd>
+        </dl>
+      </aside>
+
+    </div>
+
+  </main>
+
+  <footer>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="explore.html">Explore</a>
+      <a href="contact.html">Contact</a>
+      <a href="attributions.html">Attributions</a>
+    </div>
+
+    <p>&copy; <span id="current-year"></span> Explore Ghana | Kenneth Ighogboja</p>
+    <p>Last Modified: <span id="last-modified"></span></p>
+    <p><a href="https://youtube.com/" target="_blank" rel="noopener">Project Demonstration Video</a></p>
+  </footer>
+
+</body>
+</html>

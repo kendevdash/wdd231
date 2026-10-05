@@ -1,0 +1,79 @@
+.hero {
+  min-height: 420px;
+  display: grid;
+  align-items: center;
+  border-radius: 18px;
+  padding: 2rem;
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    linear-gradient(135deg, rgba(0, 107, 63, 0.88), rgba(206, 17, 38, 0.78)),
+    url("../images/ghana-hero.webp");
+  background-size: cover;
+  background-position: center;
+  color: var(--white);
+}
+
+.hero-content {
+  max-width: 700px;
+}
+
+.eyebrow {
+  color: var(--gold);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.hero h1 {
+  margin-bottom: 1rem;
+}
+
+.primary-button {
+  display: inline-block;
+  margin-top: 1rem;
+  background: var(--gold);
+  color: var(--dark);
+  text-decoration: none;
+  font-weight: 700;
+  padding: 0.8rem 1.4rem;
+  border-radius: 8px;
+}
+
+.primary-button:hover {
+  background: var(--white);
+  color: var(--green);
+}
+
+.welcome-section {
+  max-width: 800px;
+  margin: 4rem auto 2rem;
+  text-align: center;
+}
+
+.highlights {
+  display: grid;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.highlights article {
+  background: var(--white);
+  padding: 2rem;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  border-top: 5px solid var(--gold);
+}
+
+.highlight-icon {
+  font-size: 2rem;
+}
+
+@media screen and (min-width: 700px) {
+  .hero {
+    min-height: 520px;
+  }
+
+  .highlights {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
